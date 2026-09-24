@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Health | Medicine Reminders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-heartbeat text-primary"></i> Smart Health</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="symptoms.html"><i class="fas fa-stethoscope"></i> Symptoms Checker</a></li>
+                <li class="active"><a href="medicines.html"><i class="fas fa-pills"></i> Medicine Reminders</a></li>
+                <li><a href="appointments.html"><i class="fas fa-calendar-alt"></i> Appointments</a></li>
+                <li><a href="analytics.html"><i class="fas fa-chart-line"></i> Analytics</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="navbar">
+                <h1>Medicine Reminders</h1>
+                <div class="user-profile">
+                    <span id="user-name">Welcome, User</span>
+                    <button class="btn btn-outline" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                </div>
+            </header>
+
+            <div class="content-wrapper split-layout">
+                <div class="card p-4">
+                    <h3>Add New Medicine</h3>
+                    <form id="medicine-form">
+                        <div class="form-group mt-3">
+                            <label>Medicine Name</label>
+                            <input type="text" id="med-name" required placeholder="e.g. Paracetamol">
+                        </div>
+                        <div class="form-group">
+                            <label>Dosage</label>
+                            <input type="text" id="med-dosage" required placeholder="e.g. 500mg">
+                        </div>
+                        <div class="form-group">
+                            <label>Reminder Time</label>
+                            <input type="time" id="med-time" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100"><i class="fas fa-plus-circle"></i> Add Reminder</button>
+                    </form>
+                </div>
+
+                <div class="card p-4">
+                    <h3>My Medicines List</h3>
+                    <ul class="item-list mt-3" id="medicines-list">
+                        <!-- Populated via JS -->
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <div id="toast" class="toast hidden"></div>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "name": "keerthi",
+      "email": "keerthikanchu@gmail.com",
+      "password": "keerthi",
+      "id": 1790234138437,
+      "healthScore": 80
+    }
+  ],
+  "medicines": [],
+  "appointments": [
+    {
+      "userEmail": "keerthikanchu@gmail.com",
+      "doctor": "njhh",
+      "date": "2026-09-24",
+      "time": "12:47",
+      "reason": "fygukjn",
+      "id": 1790234186511
+    }
+  ],
+  "symptoms": [
+    {
+      "userEmail": "keerthikanchu@gmail.com",
+      "date": "24/09/2026",
+      "symptoms": "Fever, Fatigue, Shortness of Breath",
+      "prediction": "Warning: Possible severe respiratory issue. Consult a doctor immediately.",
+      "severity": "danger",
+      "id": 1790234160595
+    }
+  ]
+}
